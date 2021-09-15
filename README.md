@@ -1,0 +1,1 @@
+Playground for figuring out how to code a discord bot.
