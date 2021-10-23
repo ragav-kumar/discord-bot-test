@@ -15,5 +15,8 @@ commandable.commands = new Collection<string, CommandFile>();
 container.bind<CommandableClient>(TYPES.Client).toConstantValue(commandable);
 container.bind<string>(TYPES.Token).toConstantValue(process.env.TOKEN);
 container.bind<string>(TYPES.SteamWebToken).toConstantValue(process.env.STEAM_KEY);
+container.bind<string>(TYPES.ClientId).toConstantValue(process.env.CLIENT_ID);
+container.bind<string>(TYPES.GuildId).toConstantValue(process.env.GUILD_ID);
+container.bind<string>(TYPES.BotChannelId).toConstantValue(process.env.BOT_CHANNEL_ID);
 
 export default container;

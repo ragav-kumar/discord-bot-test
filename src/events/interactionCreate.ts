@@ -5,6 +5,7 @@ module.exports = {
     name: 'interactionCreate',
     execute: async (interaction: Interaction) => {
         const client = interaction.client as CommandableClient;
+        console.log(interaction, client.commands);
         if (!interaction.isCommand()) return;
         const command = client.commands.get(interaction.commandName);
         if (!command) return;

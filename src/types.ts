@@ -9,6 +9,9 @@ export const TYPES = {
 	Client: Symbol('CommandableClient'),
 	Token: Symbol('Token'),
 	SteamWebToken: Symbol('SteamWebToken'),
+	ClientId: Symbol('ClientId'),
+	GuildId: Symbol('GuildId'),
+	BotChannelId: Symbol('BotChannelId'),
 }
 
 export interface EventFile {
